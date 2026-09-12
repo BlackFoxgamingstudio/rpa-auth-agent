@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereign-rpa-auth-agent"
+version = "1.0.0"
+description = "Headless browser authentication agent using Model Context Protocol (MCP). Solves persistent login failures on legacy enterprise portals lacking APIs, managing encrypted session vaults, MFA timing loops, and automated form submissions."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Russell Alan Powers", email = "russell@sovereignbizbox.io"}
+]
+keywords = ["sovereign", "robotic process automation & mcp", "microservice", "n8n", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = []
+
+[project.scripts]
+sovereign-rpa-auth-agent = "src.cli:main"

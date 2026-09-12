@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "PKG-010",
+  "slug": "rpa-auth-agent",
+  "name": "sovereign-rpa-auth-agent",
+  "domain": "Robotic Process Automation & MCP",
+  "version": "1.0.0",
+  "status": "PRODUCTION_READY",
+  "entrypoint": "src/core.py",
+  "cli_command": "sovereign-rpa-auth-agent",
+  "microservice_port": 8788,
+  "n8n_webhook_path": "rpa-auth-agent-trigger",
+  "n8n_workflow": "n8n/workflow.json",
+  "test_suite": "tests/test_solution.py",
+  "author": "Russell Alan Powers",
+  "license": "MIT"
+}
